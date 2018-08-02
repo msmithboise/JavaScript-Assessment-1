@@ -40,3 +40,19 @@ console.log(jsHistory.match(/a/gi).length);
 //I SCREAM, you SCREAM, we all SCREAM for icecream
 
 var text = 'I scream, you scream, we all scream for icecream';
+
+function upperScream(str) {
+    let strArray = str.split(" ");
+  
+  for (i = 0; i < strArray.length; i++){ 
+    let word = strArray[i]
+    if ( word == "scream"|| word == "scream,"){
+      strArray[i] = "SCREAM"
+    }
+  }      
+  return strArray.join(" ");                         
+    
+  
+  
+  }
+  upperScream(text) 
