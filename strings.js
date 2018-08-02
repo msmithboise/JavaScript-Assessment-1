@@ -1,6 +1,27 @@
- //1. Given the following sentence: Change all of the lowercase letters i, in reference to yourself, to the uppercase I
- // careful not to uppercase the i in the word pair
+//1. Given the following sentence: Change all of the lowercase letters i, in reference to yourself, to the uppercase I
+// careful not to uppercase the i in the word pair
 var sentence = 'When i went to the mall i bought a pair of shoes.';
+
+function upperI(str) {
+  let strArray = str.split(" ");  // Turn sentence into an array
+
+for (i = 0; i < strArray.length; i++){ // iterate through array
+  let word = strArray[i]
+  if ( word == "i"){
+    strArray[i] = "I"
+  }
+}      
+return strArray.join(" ");                          // find the letter i... find()?  conditional?
+  
+
+// for (var i = 0; i < str.length; i++){
+//   str[i] = str[i].charAt(0).toUpperCase();
+// }
+  
+    //turn array back into string
+}
+upperI(sentence) // invoke function
+
 
 
 //2. The history of JavaScript is interesting but how many times does the letter a appear? Find a way to count both upper and lower case A's
