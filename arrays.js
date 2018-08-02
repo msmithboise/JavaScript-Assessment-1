@@ -2,6 +2,7 @@
 
 var contacts = [];
 
+0
 
 //2. Add the following people to the contacts array.
 
@@ -32,6 +33,12 @@ var tom = {
 	title: 'instructor'
 };
 
+////method overload////
+contacts.push(jake,mark,matt,darryl,tom)
 
 //3. Woops after adding all of those people to the same contacts list you realized you need a list just the instructors. Create a new variable named instructors populate it using contacts array. 
 
+var instructors = contacts.filter(c = c.title == 'instructor')
+
+console.log(contacts)
+console.log(instructors)

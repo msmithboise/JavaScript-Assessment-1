@@ -19,3 +19,4 @@ console.log(me)
 for (var key in me){
 	console.log(key, me[key])
 }
+console.log(Object.values(me))
