@@ -36,6 +36,19 @@ jsHistory.match(/a/gi).length;
 console.log(jsHistory.match(/a/gi).length);
 
 
+// function aCount(str){
+//   let total = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     const element = str[i];
+//     if(CharacterData.toLowerCase == "a") {
+//       totall++
+//     }
+    
+//   }
+//   return total
+// }
+// console.log("strings challeng 2 :", aCount(jsHistory))
+
 //3. Given the following sentence: Uppercase the entire word scream each time it appears in the sentence 
 //I SCREAM, you SCREAM, we all SCREAM for icecream
 
@@ -46,8 +59,8 @@ function upperScream(str) {
   
   for (i = 0; i < strArray.length; i++){ 
     let word = strArray[i]
-    if ( word == "scream"|| word == "scream,"){
-      strArray[i] = "SCREAM"
+    if ( word.includes("scream")){
+      strArray[i] = word.toUpperCase()
     }
   }      
   return strArray.join(" ");                         
